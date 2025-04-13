@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Add some basic styles for the audio control panel */
+    .audio-control-panel {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #1db954;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    }
+    .audio-info {
+      flex: 1;
+      margin-left: 10px;
+    }
+    .play-pause-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    /* Style for audio controls */
+    audio {
+      width: 100px; /* Set a small width for audio controls */
+      margin-top: 5px; /* Add some spacing above the audio controls */
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="9f0d197e-0eb2-459e-9a3c-69c7b901a16a-removebg-preview.png" alt="Logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="Search.html">
+            <span class="fa fa-search"></span>
+            <span>Search</span>
+          </a>
+        </li>
+        <li>
+          <a href="Library.html">
+            <span class="fa fas fa-book"></span>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="CreatePlaylist.html">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="Favorites.html">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="main-container">
+    <div class="topbar">
+      <div class="prev-next-buttons">
+       <h1>MELODIA</h1>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="SignUp.html">Sign Up</a></li>
+          <li class="divider">|</li>
+        </ul>
+        <a href="LogIn.html">
+          <button type="button">Log In</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="melodia-playlists">
+      <h2>Melodia Playlists</h2>
+      <div class="list">
+        
+        <div class="item">
+          <img src="photo1.png" alt="Today's Top Hits" />
+          <audio controls src="The Weeknd - Starboy (Audio) ft. Daft Punk.mp3"></audio>
+          <h4>Starboy</h4>
+          <h5>[stahr-boi]</h5>
+          <p>Transforming from mysterious Canadian act to Billboard mainstay</p>
+        </div>
+
+        <div class="item">
+          <img src="GGD_Iris.jpg" alt="RapCaviar" />
+          <audio controls src="Goo Goo Dolls - Iris.mp3"></audio>
+          <h4>Goo Goo Dolls</h4>
+          <h5>[gʊ ɡʊ dɒlz]</h5>
+          <p>“Iris” was written for the 1998 film City of Angels starring Nicolas Cage. John Rzeznik</p>
+        </div>
+
+        <div class="item">
+          <img src="backstreet.jpg" alt="All out 2010s" />
+          <audio controls src="Backstreet Boys - I Want It That Way (Official HD Video).mp3"></audio>
+          <h4>I Want It That Way</h4>
+          <h5>[eye wan-tih thah-tuh way]</h5>
+          <p>“I Want It That Way” is about a strained relationship.</p>
+        </div>
+
+        <div class="item">
+          <img src="lips.png" alt="Rock Classics" />
+          <audio controls src="Hinder - Lips Of An Angel (Official Music Video).mp3"></audio>
+          <h4>Lips of an Angel</h4>
+          <h5>[lɪps əv ən ˈeɪn.dʒəl]</h5>
+          <p>“Lips of an Angel” is the lead single from Hinder’s Triple Platinum debut album, Extreme Behavior.</p>
+        </div>
+
+        <div class="item">
+          <img src="bruno.jpg" alt="Chill Hits" />
+          <audio controls src="Bruno Mars - Thats What I Like (Lyrics).mp3"></audio>
+          <h4>That's What I like</h4>
+          <h5>[thahts wuh-t eye laɪk]</h5>
+          <p>“That’s What I Like” is the fourth song on 24K Magic by Bruno Mars</p>
+        </div>
+
+        <div class="item">
+          <img src="Bruno1.jfif" alt="Viva Latino" />
+          <audio controls src="Bruno Mars - Just The Way You Are (Lyrics).mp3"></audio>
+          <h4>Just The Way You Are</h4>
+          <h5>[dʒʌst ðə weɪ juː ər]</h5>
+          <p>The song is about Bruno professing “his love for a beautiful girl who occupies his dreams”.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="melodia-playlists">
+      <h2>Today's Hits</h2>
+      <div class="list">
+        <div class="item">
+          <img src="rainbow.jpg" alt="Peaceful Piano" />
+          <audio controls src="South Border - Rainbow (Lyric).mp3"></audio>
+          <h4>Rainbow </h4>
+          <h5>[rayn · bow]</h5>
+          <h4>By South Borders</h4>
+          <p>Relax and indulge with beautiful piano pieces</p>
+        </div>
+        <div class="item">
+          <img src="Baby.jfif" alt="Deep Focus" />
+          <audio controls src="Justin Bieber - Baby ft. Ludacris.mp3"></audio>
+          <h4>Baby</h4>
+          <h5>[bay · bee]</h5>
+          <h4>By Justin Bierber</h4>
+          <p>Keep calm and focus with ambient and pos...</p>
+        </div>
+        <div class="item">
+          <img src="Tibok.jfif" alt="Instrumental Study" />
+          <audio controls src="Tibok  - Earl Agustin (Official Lyric Video).mp3"></audio>
+          <h4>Tibok</h4>
+          <h5>[t̪ɪˈbok̚]</h5>
+          <h4>By Earl Agustin</h4>
+          <p>Focus with soft study music in the...</p>
+        </div>
+        <div class="item">
+          <img src="dalangin.jpg" alt="Chill Lofi Study Beats" />
+          <audio controls src="Dalangin - Earl Agustin (Performance Video).mp3"></audio>
+          <h4>Dalangin</h4>
+          <h5> [d̪ɐˈlaː.ŋɪn̪]</h5>
+          <h4>By Earl Agustin</h4>
+          <p>The perfect study beats, twenty-four...</p>
+        </div>
+        <div class="item">
+          <img src="lazy.jpg" alt="Coding Mode" />
+          <audio controls src="Bruno Mars - The Lazy Song (Lyrics).mp3"></audio>
+          <h4>The Lazy Song</h4>
+          <h5>[/ðə ˈleɪzi sɒŋ/]</h5>
+          <h4>By Justin Bieber</h4>
+          <p>Dedicated to all the programmers out there.</p>
+        </div>
+        <div class="item">
+          <img src="arawgabi.jfif" alt="Focus Flow" />
+          <audio controls src="Araw Gabi - Regine Velasquez (Khel Pangilinan with Lyrics).mp3"></audio>
+          <h4>Araw Gabi</h4>
+          <h5>[/ˈaɾaw/ ɡaːbi/]</h5>
+          <h4>By Regine Velasquez</h4>
+          <p>Uptempo instrumental hip hop beats.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="audio-control-panel" id="audioControlPanel" style="display: none;">
+      <div class="audio-info">
+        <span id="currentTrackTitle">Now Playing: </span>
+      </div>
+      <button class="play-pause-button" id="playPauseButton">
+        <span class="fa fa-play" id="playPauseIcon"></span>
+      </button>
+    </div>
+  <script>
+      // Get all play buttons and audio elements
+      const playButtons = document.querySelectorAll('.play');
+      const audioControlPanel = document.getElementById('audioControlPanel');
+      const currentTrackTitle = document.getElementById('currentTrackTitle');
+      const playPauseButton = document.getElementById('playPauseButton');
+      const playPauseIcon = document.getElementById('playPauseIcon');
+      let currentAudio = null;
+  
+      playButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Find the audio element within the same item
+          const audio = this.parentElement.querySelector('audio');
+          const trackTitle = this.parentElement.querySelector('h4').innerText;
+  
+          // Pause all other audio elements
+          document.querySelectorAll('audio').forEach(a => {
+            if (a !== audio) {
+              a.pause();
+              a.currentTime = 0; // Reset the audio to the beginning
+            }
+          });
+  
+          // Play or pause the clicked audio
+          if (currentAudio !== audio) {
+            if (currentAudio) {
+              currentAudio.pause();
+              currentAudio.currentTime = 0; // Reset the previous audio
+            }
+            currentAudio = audio;
+            currentTrackTitle.innerText = `Now Playing: ${trackTitle}`;
+            audioControlPanel.style.display = 'flex';
+            audio.play();
+            playPauseIcon.classList.remove('fa-play');
+            playPauseIcon.classList.add('fa-pause');
+          } else {
+            if (audio.paused) {
+              audio.play();
+              playPauseIcon.classList.remove('fa-play');
+              playPauseIcon.classList.add('fa -pause');
+            } else {
+              audio.pause();
+              playPauseIcon.classList.remove('fa-pause');
+              playPauseIcon.classList.add('fa-play');
+            }
+          }
+        });
+      });
+  
+      playPauseButton.addEventListener('click', function() {
+        if (currentAudio) {     
+          if (currentAudio.paused) {
+            currentAudio.play();
+            playPauseIcon.classList.remove('fa-play');
+            playPauseIcon.classList.add('fa-pause');
+          } else {
+            currentAudio.pause();
+            playPauseIcon.classList.remove('fa-pause');
+            playPauseIcon.classList.add('fa-play');
+          }
+        }
+      });
+    </script>
+    <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+</body>
+</html>

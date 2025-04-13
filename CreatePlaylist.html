@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Playlist</title>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css">
+</head>
+  <style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #282828;
+        color: #ffffff;
+        outline: none;
+    }
+
+    .form-group textarea {
+        resize: none;
+    }
+
+    .form-group input[type="file"] {
+        margin-top: 10px;
+    }
+
+    .create-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #1db954;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+    }
+  </style>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="9f0d197e-0eb2-459e-9a3c-69c7b901a16a-removebg-preview.png" alt="Logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="Search.html">
+            <span class="fa fa-search"></span>
+            <span>Search</span>
+          </a>
+        </li>
+        <li>
+          <a href="Library.html">
+            <span class="fa fas fa-book"></span>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="CreatePlaylist.html">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="Favorites.html">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h1>Create Playlist</h1>
+    <form>
+      <div class="form-group">
+        <label for="playlist-name">Playlist Name</label>
+        <input type="text" id="playlist-name" placeholder="Enter playlist name" required>
+      </div>
+      <div class="form-group">
+        <label for="playlist-description">Description</label>
+        <textarea id="playlist-description" rows="4" placeholder="Enter a description for your playlist"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="playlist-cover">Cover Image</label>
+        <input type="file" id="playlist-cover" accept="image/*">
+      </div>
+      <button type="submit" class="create-button">Create Playlist</button>
+    </form>
+  </div>
+
+  <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+</body>
+</html>

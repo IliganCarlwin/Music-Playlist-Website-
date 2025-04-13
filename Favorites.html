@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Favorites</title>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css">
+</head>
+  <style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .search-results {
+        margin-top: 20px;
+    }
+
+    .result-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #333;
+        transition: background-color 0.3s;
+    }
+
+    .result-item:hover {
+        background-color: #282828;
+    }
+
+    .result-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
+
+    .result-item .info {
+        flex-grow: 1;
+    }
+
+    .result-item .info h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .result-item .info p {
+        margin: 0;
+        font-size: 14px;
+        color: #b3b3b3;
+    }
+
+    .play-button {
+        background-color: #1db954;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+  </style>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="9f0d197e-0eb2-459e-9a3c-69c7b901a16a-removebg-preview.png" alt="Logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="Search.html">
+            <span class="fa fa-search"></span>
+            <span>Search</span>
+          </a>
+        </li>
+        <li>
+          <a href="Library.html">
+            <span class="fa fas fa-book"></span>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="CreatePlaylist.html">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="Favorites.html">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h1>Liked Songs</h1>
+    <div class="search-results">
+        <div class="result-item">
+            <img src="https://via.placeholder.com/50" alt="Song Cover">
+            <div class="info">
+                <h3>Song Title 1</h3>
+                <p>Artist Name 1</p>
+            </div>
+            <button class="play-button">
+                <i class="fa fa-play"></i>
+            </button>
+        </div>
+        <div class="result-item">
+            <img src="https://via.placeholder.com/50" alt="Song Cover">
+            <div class="info">
+                <h3>Song Title 2</h3>
+                <p>Artist Name 2</p>
+            </div>
+            <button class="play-button">
+                <i class="fa fa-play"></i>
+            </button>
+        </div>
+        <div class="result-item">
+            <img src="https://via.placeholder.com/50" alt="Song Cover">
+            <div class="info">
+                <h3>Song Title 3</h3>
+                <p>Artist Name 3</p>
+            </div>
+            <button class="play-button">
+                <i class="fa fa-play"></i>
+            </button>
+        </div>
+        <div class="result-item">
+            <img src="https://via.placeholder.com/50" alt="Song Cover">
+            <div class="info">
+                <h3>Song Title 4</h3>
+                <p>Artist Name 4</p>
+            </div>
+            <button class="play-button">
+                <i class="fa fa-play"></i>
+            </button>
+        </div>
+        <div class="result-item">
+            <img src="https://via.placeholder.com/50" alt="Song Cover">
+            <div class="info">
+                <h3>Song Title 5</h3>
+                <p>Artist Name 5</p>
+            </div>
+            <button class="play-button">
+                <i class="fa fa-play"></i>
+            </button>
+        </div>
+        <!-- Add more result items as needed -->
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+</body>
+</html>
